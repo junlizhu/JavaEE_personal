@@ -11,33 +11,33 @@ import cn.goodjobs.cms.service.UsersService;
 
 @Service
 public class UsersServiceImpl implements UsersService {
-	
+
 	@Autowired
 	private UsersDao usersDao;
-	
+
 	@Override
-	public Long createUsers(Users users){
-		Long id =  usersDao.insert(users);
+	public Long createUsers(Users users) {
+		Long id = usersDao.insert(users);
 		return id;
 	}
 
 	@Override
-	public Long modifyUsers(Users users){
+	public Long modifyUsers(Users users) {
 		return usersDao.update(users);
 	}
 
 	@Override
-	public Long removeUsers(Long id){
+	public Long removeUsers(Long id) {
 		return usersDao.delete(id);
 	}
 
 	@Override
-	public Users getUsers(Long id){
+	public Users getUsers(Long id) {
 		return usersDao.getUser(id);
 	}
 
 	@Override
-	public List<Users> getUsersList(Users users){
+	public List<Users> getUsersList(Users users) {
 		return usersDao.getUsersList(users);
 	}
 

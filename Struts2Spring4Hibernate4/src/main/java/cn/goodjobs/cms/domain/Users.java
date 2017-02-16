@@ -1,20 +1,20 @@
 package cn.goodjobs.cms.domain;
 
 public class Users {
-	
+
 	private Long id;
-	
+
 	private String name;
-	
+
 	private String pass;
-	
+
 	private Integer age;
-	
-	public Users(){
-		
+
+	public Users() {
+
 	}
-	
-	public Users(Long id){
+
+	public Users(Long id) {
 		this.id = id;
 	}
 

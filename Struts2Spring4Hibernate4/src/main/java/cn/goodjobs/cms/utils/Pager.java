@@ -18,7 +18,6 @@ public class Pager implements Serializable {
 
 	private int rowCount = 10;
 
-	
 	private int currentPage = 1;
 
 	private int pageCount = 1;

@@ -4,14 +4,13 @@
 	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-<class name="cn.goodjobs.cms.domain.Users" table="USERS">
-	<id name="id" type="long" column="ID">
-		<generator class="native"/>
-	</id>
-	<!-- not-null="true" -->
-	<property name="name" type="string" column="NAME"  />
-	<property name="pass" type="string" column="PASS"  />
-	<property name="age"  type="int" column="AGE"  />
-</class>
-
+	<class name="cn.goodjobs.cms.domain.Users" table="USERS">
+		<id name="id" type="long" column="ID">
+			<generator class="native" />
+		</id>
+		<!-- not-null="true" -->
+		<property name="name" type="string" column="NAME" />
+		<property name="pass" type="string" column="PASS" />
+		<property name="age" type="int" column="AGE" />
+	</class>
 </hibernate-mapping>
