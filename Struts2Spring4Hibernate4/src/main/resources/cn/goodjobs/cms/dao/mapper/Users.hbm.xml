@@ -13,4 +13,5 @@
 		<property name="pass" type="string" column="PASS" />
 		<property name="age" type="int" column="AGE" />
 	</class>
+	
 </hibernate-mapping>
